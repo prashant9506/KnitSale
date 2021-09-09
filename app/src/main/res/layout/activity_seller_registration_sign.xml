@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerRegistrationSign">
+
+    <include layout="@layout/custom_toolbar"></include>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/subform_layout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Registration / Login"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="20dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputSellerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        app:errorEnabled="true"
+        android:layout_gravity="center"
+        app:errorTextColor="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="enter email"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/seller_email"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInputSellerPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="8"
+            app:counterOverflowTextColor="@color/colorAccent"
+            android:layout_gravity="center"
+            app:errorTextColor="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:hint="enter password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/seller_password"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btnSellerRegistration"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:text="Registration"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnSellerLogin"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:text="Login"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dashsign"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registration_loginmessage"
+                android:textSize="10sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent"
+                android:layout_marginBottom="10dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <!-- Footer Layout-->
+    <include layout="@layout/footer"></include>
+
+</RelativeLayout>

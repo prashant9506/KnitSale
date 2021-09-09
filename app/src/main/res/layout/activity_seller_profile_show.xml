@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerProfileShow">
+
+    <include layout="@layout/custom_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@color/colorSkyBlue"
+        android:scrollIndicators="bottom"
+        android:scrollbarSize="5sp"
+        android:layout_marginBottom="75dp"
+        android:layout_below="@+id/customToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/subform_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Profile Show"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:paddingRight="20dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ring_frame"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgViewSellerProfileShow"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/profile_pic"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="20dp"
+                android:background="@drawable/all_product_pic_layout">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Details"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/subform_layout" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:text="Email"
+                        android:textSize="25sp"
+                        android:textColor="@color/colorAccent"/>
+                    <TextView
+                        android:id="@+id/txtViewSellerEmailShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="100dp"
+                        android:text="empty"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingBottom="5dp">
+
+               <TextView
+                   android:layout_width="100dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="50dp"
+                   android:text="Name"
+                   android:textSize="25sp"
+                   android:textColor="@color/colorAccent"/>
+               <TextView
+                   android:id="@+id/txtViewSellerNameShow"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="100dp"
+                   android:text="empty"
+                   android:textSize="20sp"/>
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Mobile"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:id="@+id/txtViewSellerMobShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="empty"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Opt. Mobile"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:id="@+id/txtViewSellerAlternativeMobShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="empty"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/all_product_pic_layout">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Knit Details"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/subform_layout" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:text="Branch/Year"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:id="@+id/txtViewSellerBranchYearShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:text="empty"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:text="Address"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:id="@+id/txtViewSellerHostelRoomShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:text="empty"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Footer Layout-->
+    <include layout="@layout/footer"></include>
+
+    <ProgressBar
+        android:id="@+id/progressBarProfielShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:indeterminateTint="@color/colorDarkSkyBlue"/>
+
+
+</RelativeLayout>

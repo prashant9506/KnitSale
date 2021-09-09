@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.knitsale">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/knitsale_appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/knitsale_appicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SelectImageShow" />
+        <activity
+            android:name=".SelectProductDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SellerProfileShow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SellerForgotPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SellerProductList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SellerProductUpload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SellerDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SellerProfileUpdate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SellerRegistrationSign"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service android:name=".model.ProductNotification">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

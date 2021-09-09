@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "224660734460",
+    "firebase_url": "https://knitsale-50390.firebaseio.com",
+    "project_id": "knitsale-50390",
+    "storage_bucket": "knitsale-50390.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224660734460:android:0e76b8c056dd0cb5793279",
+        "android_client_info": {
+          "package_name": "com.example.knitsale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224660734460-tqu7kfkkslqk7r1q58v3cj44oq6p3bur.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.knitsale",
+            "certificate_hash": "415f7d9fae4cfd776745a6468b52779608d5bac4"
+          }
+        },
+        {
+          "client_id": "224660734460-0bu7d9er9em6qehnl5tqv1h5vbaasdbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCKO2AybTybTb3XSQ_i_s-a47NN47xZ3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224660734460-0bu7d9er9em6qehnl5tqv1h5vbaasdbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

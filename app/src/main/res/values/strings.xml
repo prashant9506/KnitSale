@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KnitSale</string>
+    <string name="feedbackmessage">Contact us parashant.188606@knit.ac.in</string>
+    <string name="forgotmessage">* Please enter a valid email because KnitSale will send a reset password link *</string>
+    <string name="registration_loginmessage">* If you already registered then click Login otherwise click Registration *</string>
+    <string name="dashsign">---------------------------------------------</string>
+</resources>

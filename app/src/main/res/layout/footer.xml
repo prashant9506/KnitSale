@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="120dp"
+        android:background="#FFFFFF"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell your unwanted things"
+            android:textColor="#43464b"
+            android:textSize="20sp"
+            app:fontFamily="@font/cuprum" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy and fill your needs"
+            android:textSize="20sp"
+            android:textColor="#43464b"
+            app:fontFamily="@font/cuprum"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Only For Knitian"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorSkyBlue"
+            android:textSize="15sp"
+            app:fontFamily="@font/cuprum" />
+    </LinearLayout>
+
+</RelativeLayout>

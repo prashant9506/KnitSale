@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerProductUpload">
+
+    <include layout="@layout/custom_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@color/colorSkyBlue"
+        android:scrollIndicators="bottom"
+        android:scrollbarSize="5sp"
+        android:layout_marginBottom="75dp"
+        android:layout_below="@+id/customToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/subform_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Product Upload"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:paddingRight="20dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Pic"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/subform_layout" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="6dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="* you can select max 4 image *"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginBottom="3dp"/>
+
+                    <Button
+                        android:id="@+id/btnChooseProductImage"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:text="choose multiple image"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/product_pic"/>
+
+                </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Details"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/subform_layout" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputProductTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:errorTextColor="@color/colorAccent"
+                android:layout_gravity="center">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:hint="enter product title"
+                    android:drawableLeft="@drawable/seller_branch_year"
+                    android:drawableTint="@color/colorSkyBlue"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:hint="enter product price"
+                    android:inputType="number"
+                    android:drawableLeft="@drawable/product_price"
+                    android:drawableTint="@color/colorSkyBlue"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputProductDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:hint="enter product description"
+                    android:drawableLeft="@drawable/seller_branch_year"
+                    android:drawableTint="@color/colorSkyBlue"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnSellerProductUpload"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:text="Product Upload"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <!-- Footer Layout-->
+    <include layout="@layout/footer"></include>
+
+</RelativeLayout>

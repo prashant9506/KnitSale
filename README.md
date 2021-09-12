@@ -8,6 +8,8 @@ It is a simple and user-interface.<br>
 3 SDK <br>
 <h2>Used Language</h2>
 1 Backend - java<br>
-2 Databse - Firebase
+2 Databse - Firebase<br>
+<h2>Apache License 2.0</h2>
+A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
 
